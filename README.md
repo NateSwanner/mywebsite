@@ -1,42 +1,24 @@
-# Nathan Swanner Portfolio — Dynamic Build
+# Nathan Swanner Portfolio — GitHub Pages Build
 
-This is a lightweight static portfolio designed to feel more like a modern Framer/Webflow site while remaining deployable on Netlify, Cloudflare Pages, Vercel, GitHub Pages, or any ordinary web host.
+This folder is ready to publish directly from the **root of the `main` branch** on GitHub Pages.
 
-## What changed
+## Important
 
-- Animated hero with an operating-system visualization
-- Scroll-triggered reveals
-- Count-up career metrics
-- Interactive / cursor-reactive case-study cards
-- Sticky, scroll-progressive “How I Work” section
-- Moving credentials rail
-- Animated case-study navigation
-- KPI bands, timelines, and before/after visual stories on case-study pages
-- Responsive layouts for desktop, tablet, and phone
-- Reduced-motion support for accessibility
-- No framework and no build step
+Upload the **contents of this folder**, not a ZIP file and not an enclosing `nate-portfolio` folder. At the top level of the GitHub repository you should be able to see:
 
-## Deploy to Netlify
+- `index.html`
+- `styles.css`
+- `script.js`
+- `CNAME`
+- `.nojekyll`
+- `404.html`
+- `assets/`
+- `case-studies/`
 
-Drag the entire `nate-portfolio` folder into Netlify, or upload the ZIP containing the folder contents. The site entry point is `index.html`.
+The `case-studies/` folder contains both legacy `.html` files and clean directory-based routes. The homepage uses the clean routes, for example `case-studies/portfolio-operations/`.
 
-## Files
+## GitHub Pages settings
 
-- `index.html` — homepage
-- `styles.css` — complete design system and responsive styles
-- `script.js` — motion/interactions
-- `case-studies/` — six project pages
-- `assets/favicon.svg` — favicon
-- `robots.txt` and `sitemap.xml` — search-engine basics
+In the repository go to **Settings → Pages**. Under **Build and deployment** choose **Deploy from a branch**, then select **main** and **/(root)**. The custom domain should be `nateswanner.com`.
 
-## Before publishing
-
-1. Confirm the two Google Docs résumé links can be opened by people outside your account.
-2. Confirm `nateswanner.com` points to the final host.
-3. Test the email links.
-4. Preview desktop and mobile in a real browser.
-5. Update `sitemap.xml` if the final page URLs change.
-
-## Design philosophy
-
-The site is intentionally dynamic but restrained. Motion is used to clarify scale, sequence, transformation, and operating systems rather than as decoration. It avoids stock photography and keeps the focus on measurable outcomes and program leadership.
+The included `CNAME` file preserves the custom domain when publishing from a branch. The included `.nojekyll` file tells GitHub Pages to serve this static HTML/CSS/JS site directly.
