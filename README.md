@@ -1,24 +1,12 @@
-# Nathan Swanner Portfolio — GitHub Pages Build
+# Nathan Swanner Portfolio — Simple GitHub Pages Build
 
-This folder is ready to publish directly from the **root of the `main` branch** on GitHub Pages.
-
-## Important
-
-Upload the **contents of this folder**, not a ZIP file and not an enclosing `nate-portfolio` folder. At the top level of the GitHub repository you should be able to see:
-
-- `index.html`
-- `styles.css`
-- `script.js`
-- `CNAME`
-- `.nojekyll`
-- `404.html`
-- `assets/`
-- `case-studies/`
-
-The `case-studies/` folder contains both legacy `.html` files and clean directory-based routes. The homepage uses the clean routes, for example `case-studies/portfolio-operations/`.
+This build intentionally uses only root-level HTML pages for the portfolio and case studies. It avoids nested routing so GitHub Pages can serve every project as a normal static HTML file.
 
 ## GitHub Pages settings
+- Source: Deploy from a branch
+- Branch: main
+- Folder: /(root)
+- Custom domain: nateswanner.com
 
-In the repository go to **Settings → Pages**. Under **Build and deployment** choose **Deploy from a branch**, then select **main** and **/(root)**. The custom domain should be `nateswanner.com`.
-
-The included `CNAME` file preserves the custom domain when publishing from a branch. The included `.nojekyll` file tells GitHub Pages to serve this static HTML/CSS/JS site directly.
+## Important
+Upload the CONTENTS of this folder to the repository root. After upload, `index.html`, `styles.css`, `script.js`, and every `*-*.html` case-study page should appear together at the top level of the repository.
