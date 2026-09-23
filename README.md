@@ -1,12 +1,14 @@
-# Nathan Swanner Portfolio — Simple GitHub Pages Build
+# Nathan Swanner Portfolio — GitHub Pages Cache-Safe Build
 
-This build intentionally uses only root-level HTML pages for the portfolio and case studies. It avoids nested routing so GitHub Pages can serve every project as a normal static HTML file.
+This build uses brand-new case-study filenames to bypass any cached redirect behavior from earlier versions.
 
-## GitHub Pages settings
-- Source: Deploy from a branch
-- Branch: main
-- Folder: /(root)
-- Custom domain: nateswanner.com
+Publish from `main` / `(root)` in GitHub Pages.
 
-## Important
-Upload the CONTENTS of this folder to the repository root. After upload, `index.html`, `styles.css`, `script.js`, and every `*-*.html` case-study page should appear together at the top level of the repository.
+Case-study URLs:
+
+- `/case-study-portfolio-operations-v3.html`
+- `/case-study-seven-site-launch-v3.html`
+- `/case-study-workflow-transformation-v3.html`
+- `/case-study-newsletter-optimization-v3.html`
+- `/case-study-generative-ai-workflow-v3.html`
+- `/case-study-ai-content-updates-v3.html`
